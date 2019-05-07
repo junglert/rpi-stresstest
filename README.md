@@ -24,5 +24,7 @@ How to:
 Future plans:
 
   -user input for time and directory
+  
   -script creates own alias
+  
   -help-page
