@@ -15,12 +15,14 @@ How to:
   
   let the script do its magic:
   
-      Enter the wanted time (in seconds) in the "duration =’FOO’" variable.
-      Enter your wanted directory in the "save_dir='/home/FOO" variable.
+      Exec the script, you may have to change the dependencies with 
+        
+        chmod 777 ./stresstest.sh
+  
+      Enter the wanted time in seconds.
+      Enter the filename .
       
-      Exec the script.
-
-
+      
 Future plans:
 
   -user input for time and file ✔
