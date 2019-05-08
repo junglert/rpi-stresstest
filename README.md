@@ -23,7 +23,7 @@ How to:
 
 Future plans:
 
-  -user input for time and directory ✔
+  -user input for time and file ✔
   
   -script creates own alias
   
