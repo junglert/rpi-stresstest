@@ -1,10 +1,10 @@
 #!/bin/bash
-duration='60000' #in Seconds
-save_dir='/home/FOO' #here you can change your wanted directory
+read -p "Runtime in seconds: " duration #in seconds
+read -p "Filename.csv: " save_dir #filename as a csv
 
-echo "${save_dir}"
+#echo "${save_dir}"
 #stress --cpu 4 --timeout ${duration} --quiet &
-echo "Zeit; Temperatur in °C; Taktfrequenz in MHz" | tee -a ${save_dir}
+echo "Time; Temperature in °C; Frequency in MHz" | tee -a ${save_dir}
 
 for (( i=1; i<=${duration}; i++ ))
 do
