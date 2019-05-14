@@ -3,7 +3,7 @@ read -p "Runtime in seconds: " duration #in seconds
 read -p "Filename.csv: " save_dir #filename as a csv
 
 #echo "${save_dir}"
-#stress --cpu 4 --timeout ${duration} --quiet &
+stress --cpu 4 --timeout ${duration} --quiet &
 echo "Time; Temperature in °C; Frequency in MHz" | tee -a ${save_dir}
 
 for (( i=1; i<=${duration}; i++ ))
