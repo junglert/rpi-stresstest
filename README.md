@@ -10,37 +10,39 @@ I tested the script on the Pi 3b and b+.
 
 This repo is usefull for monitoring temperatures over a certain amount of time.
 
-How to:
+# How to:
   
   install this git-repo:
   
          git clone https://github.com/junglert/rpi-stresstest.git
 
-  
-  let the script do its magic:
-  
-      Exec the script, you may have to change the permissions with 
+  install the needed package:
+      
+         sudo apt-get install stress
+    
+  Exec the script, you may have to change the permissions with 
         
          chmod 777 ./stresstest.sh
          
-      After you changed the permissions exec the script
+  After you changed the permissions exec the script
         
           sudo ./stresstest.sh
      
-      You need sudo, because the cat command to read the cpu-frequency needs sudo permissions.
+    You will need sudo because the cat command needs sudo permissions
       
-      If everything went according to plan, the shell should prompt 2 phrases
+  If everything went according to plan, the shell should prompt 2 phrases
       
         Runtime in seconds:     Enter the amount of time, in seconds, that you want the script to run
-        Filename.csv:           Enter your filename with .csv at the end (the file is created in the source folder of the script)
+        Filename.csv:           Enter your filename with .csv at the end 
+                                (the file is created in the source folder of the script)
       
       
-Future plans:
+   Future plans:
 
-  -user input for time and file ✔
+   -user input for time and file ✔
   
-  -script creates own alias
+    -script creates own alias
   
-  -help-page
+    -help-page
   
-  -testing on other Pi´s
+    -testing on other Pi´s and SBC´s
