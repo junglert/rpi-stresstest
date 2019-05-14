@@ -19,12 +19,20 @@ How to:
   
   let the script do its magic:
   
-      Exec the script, you may have to change the dependencies with 
+      Exec the script, you may have to change the permissions with 
         
          chmod 777 ./stresstest.sh
-  
-      Enter the wanted time in seconds.
-      Enter the filename .
+         
+      After you changed the permissions exec the script
+        
+          sudo ./stresstest.sh
+     
+      You need sudo, because the cat command to read the cpu-frequency needs sudo permissions.
+      
+      If everything went according to plan, the shell should prompt 2 phrases
+      
+        Runtime in seconds:     Enter the amount of time, in seconds, that you want the script to run
+        Filename.csv:           Enter your filename with .csv at the end (the file is created in the source folder of the script)
       
       
 Future plans:
