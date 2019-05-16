@@ -37,7 +37,7 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
                                 (the file is created in the source folder of the script)
       
       
-   Future plans:
+   # Future plans:
 
    -user input for time and file ✔
   
