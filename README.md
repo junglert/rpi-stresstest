@@ -41,8 +41,8 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
 
    -user input for time and file ✔
   
-    -script creates own alias
+   <strike>-script creates own alias</strike>
   
-    -help-page
+   -help-page ✔
   
     -testing on other Pi´s and SBC´s
