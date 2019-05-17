@@ -36,7 +36,7 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
     
   Starting the script:    
         
-          ./stresstest -s
+          sudo ./stresstest -s
   
   
   After that the shell should prompt 2 phrases:
@@ -54,4 +54,8 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
   
    -help-page ✔
   
-    -testing on other Pi´s and SBC´s
+   -testing on other Pi´s and SBC´s
+   
+     -RaspberryPi 3b and b+ ✔
+     -RaspberryPi 1
+     -Odroid C2
