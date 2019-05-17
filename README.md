@@ -24,13 +24,22 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
         
          chmod 777 ./stresstest.sh
          
-  After you changed the permissions exec the script
+  After you changed the permissions exec the script:
         
-          sudo ./stresstest.sh
-     
-    You will need sudo because the cat command needs sudo permissions
-      
-  If everything went according to plan, the shell should prompt 2 phrases
+          ./stresstest.sh
+          
+  You will notice, that the script is not executing, instead the script is showing its usage:   
+   
+          Usage: 1. stresstest -s        
+                 2. "stresstest -h" for help page
+                 3. "stresstest" for usage
+    
+  Starting the script:    
+        
+          ./stresstest -s
+  
+  
+  After that the shell should prompt 2 phrases:
       
         Runtime in seconds:     Enter the amount of time, in seconds, that you want the script to run
         Filename.csv:           Enter your filename with .csv at the end 
