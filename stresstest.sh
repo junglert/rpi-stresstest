@@ -3,16 +3,17 @@
 showhelp(){ #function for the help-page
 echo '
 This script utilizes all cores of the RaspberryPi to the max.
- -s = start script
+
+ -s = start script and fill out the needed informations
  -h = help page
      '
 }
 
 showusage(){ #function for the usage-page
 echo '
-Usage: 1. stresstest -s        
+Usage: 1. stresstest -s start the script      
        2. "stresstest -h" for help page
-       3. "stresstest" for usage
+       3. only the name of the script "./stresstest.sh" is showing the usage
     '
 }
 
@@ -43,6 +44,6 @@ if [ "$1" == "-h" ];then #checking if input is -h --> show help-page
 showhelp
 fi
 
-if [ "$1" == "$1" ];then #checking if input is blank --> show usage
+if [ -z "$1" ];then #checking if input is blank --> show usage
 showusage
 fi
