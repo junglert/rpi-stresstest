@@ -3,17 +3,19 @@
 showhelp(){ #function for the help-page
 echo '
 This script utilizes all cores of the RaspberryPi to the max.
+It´s working on RaspberryPi 1, 3b and b+
 
- -s = start script and fill out the needed informations
- -h = help page
+
+ -s or --start = start script and fill out the needed informations
+ -h or --help = help page
      '
 }
 
 showusage(){ #function for the usage-page
 echo '
-Usage: 1. stresstest -s start the script      
-       2. "stresstest -h" for help page
-       3. only the name of the script "./stresstest.sh" is showing the usage
+Usage: 1. stresstest -s or --start     | start the script      
+       2. stresstest -h or --help      | show help page
+       3. ./stresstest.sh 	       | show the usage
     '
 }
 
@@ -35,11 +37,11 @@ stresstest(){ #function for stressing the pi
         done
 }
 
-if [ "$1" == "-s" ] && [ "$1" == "--start"];then #checking if input is -s --> starting script
+if [ "$1" == "-s" ] || [ "$1" == "--start" ];then #checking if input is -s or --start --> starting script
 stresstest
 fi
 
-if [ "$1" == "-h" ] && [ "$1" == "--help"];then #checking if input is -h --> show help-page
+if [ "$1" == "-h" ] || [ "$1" == "--help" ];then #checking if input is -h or --help --> show help-page
 showhelp
 fi
 
