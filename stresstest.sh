@@ -35,11 +35,11 @@ stresstest(){ #function for stressing the pi
         done
 }
 
-if [ "$1" == "-s" ];then #checking if input is -s --> starting script
+if [ "$1" == "-s" ] && [ "$1" == "--start"];then #checking if input is -s --> starting script
 stresstest
 fi
 
-if [ "$1" == "-h" ];then #checking if input is -h --> show help-page
+if [ "$1" == "-h" ] && [ "$1" == "--help"];then #checking if input is -h --> show help-page
 showhelp
 fi
 
