@@ -57,5 +57,5 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
    -testing on other Pi´s and SBC´s
    
      -RaspberryPi 3b and b+ ✔
-     -RaspberryPi 1
+     -RaspberryPi 1 ✔
      -Odroid C2
