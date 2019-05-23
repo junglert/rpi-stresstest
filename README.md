@@ -5,7 +5,7 @@ This is a bash based script.
 It´s maxing all cores to the highest frequency over a set time (in seconds) 
 and saves the results in a CSV-file.
 
-I tested the script on the Pi 3b and b+.
+I tested the script on the Pi 1, 2b, 3b and b+.
 
 
 This repo is usefull for monitoring temperatures over a certain amount of time.
