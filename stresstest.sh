@@ -3,8 +3,11 @@
 showhelp(){ #function for the help-page
 echo '
 This script utilizes all cores of the RaspberryPi to the max.
-It´s working on RaspberryPi 1, 3b and b+
+It´s working on RaspberryPi 1, 2b, 3b and b+
 
+You need to exec this script with sudo ./stresstest.sh due to
+the fact that the command that reads the CPU frequency needs
+to be exectuted as root.
 
  -s or --start = start script and fill out the needed informations
  -h or --help = help page
@@ -13,9 +16,9 @@ It´s working on RaspberryPi 1, 3b and b+
 
 showusage(){ #function for the usage-page
 echo '
-Usage: 1. stresstest -s or --start     | start the script      
-       2. stresstest -h or --help      | show help page
-       3. ./stresstest.sh 	       | show the usage
+Usage: 1. sudo ./stresstest.sh -s or --start  | start the script      
+       2. ./stresstest.sh -h or --help        | show help page
+       3. ./stresstest.sh 	              | show the usage
     '
 }
 
@@ -45,6 +48,6 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ];then #checking if input is -h or --h
 showhelp
 fi
 
-if [ -z "$1" ];then #checking if input is blank --> show usage
+if [ -z "$1" ];then #checking if input is blank --> show usage 
 showusage
 fi
