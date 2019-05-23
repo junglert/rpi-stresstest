@@ -50,13 +50,14 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
 
    -user input for time and file ✔
   
-   <strike>-script creates own alias</strike>
+   -script creates own alias
   
    -help-page ✔
   
-   -testing on other Pi´s ✔
+   -testing on other Pi´s ✔ 
    
      -RaspberryPi 3b and b+ ✔
      -RaspberryPi 2b ✔
      -RaspberryPi 1 ✔
+      
     
