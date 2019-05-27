@@ -50,7 +50,7 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
 
    -user input for time and file ✔
   
-   -script creates own alias
+   -~~script creates own alias~~
   
    -help-page ✔
   
