@@ -12,11 +12,11 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
 
 # How to:
   
-  install this git-repo:
+  Install this git-repo:
   
          git clone https://github.com/junglert/rpi-stresstest.git
 
-  install the needed package:
+  Install the needed package:
       
          sudo apt-get install stress
     
