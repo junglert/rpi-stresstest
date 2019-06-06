@@ -1,5 +1,10 @@
 #!/bin/bash
-
+#author: Johannes Unglert
+#mail:
+#date: 07.05.2019
+#license: GPL-3.0
+#summary: this bash script utilizes all cores of the RaspberryPi
+ 
 showhelp(){ #function for the help-page
 echo '
 This script utilizes all cores of the RaspberryPi to the max.
