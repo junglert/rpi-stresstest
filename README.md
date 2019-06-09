@@ -7,8 +7,9 @@ and saves the results in a CSV-file.
 
 I tested the script on the Pi 1, 2b, 3b and b+.
 
-
 This repo is usefull for monitoring temperatures over a certain amount of time.
+
+**Check out the manual!**
 
 # How to:
   
@@ -60,5 +61,5 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
       - RaspberryPi 2b ✔
       - RaspberryPi 1 ✔
      
-   - creating a wiki / manual 
+   - creating a wiki / manual ✔
     
