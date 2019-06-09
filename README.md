@@ -9,7 +9,7 @@ I tested the script on the Pi 1, 2b, 3b and b+.
 
 This repo is usefull for monitoring temperatures over a certain amount of time.
 
-**Check out the manual!**
+**Check out the wiki and the manual!**
 
 # How to:
   
