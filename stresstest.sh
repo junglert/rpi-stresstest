@@ -12,7 +12,7 @@ It´s working on RaspberryPi 1, 2b, 3b and b+
 
 You need to exec this script with sudo ./stresstest.sh due to
 the fact that the command that reads the CPU frequency needs
-to be exectuted as root.
+to be executed as root.
 
  -s or --start = start script and fill out the needed informations
  -h or --help = help page
