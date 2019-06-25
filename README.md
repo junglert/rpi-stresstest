@@ -55,8 +55,9 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
   
    - help-page ✔
   
-   - testing on other Pi´s ✔ 
+   - testing on other Pi´s ~~✔~~
    
+      - RaspberryPi 4b
       - RaspberryPi 3b and b+ ✔
       - RaspberryPi 2b ✔
       - RaspberryPi 1 ✔
