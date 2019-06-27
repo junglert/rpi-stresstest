@@ -5,11 +5,11 @@ This is a bash based script.
 It´s maxing all cores to the highest frequency over a set time (in seconds) 
 and saves the results in a CSV-file.
 
-I tested the script on the Pi 1, 2b, 3b and b+ and soon on the new and better Pi 4b.
+I tested this script on the Pi 1b, 2b, 3b and b+ and soon on the new and better Pi 4b.
 
-This repo is usefull for monitoring temperatures over a certain amount of time.
+This repo is usefull for monitoring cpu temperatures of your Pi over a certain amount of time.
 
-**Check out the wiki and the manual!**
+**Check out the [Wiki](https://github.com/junglert/rpi-stresstest/wiki) and the [manual](https://github.com/junglert/rpi-stresstest/wiki/How-to)(**
 
 # How to:
   
@@ -60,7 +60,7 @@ This repo is usefull for monitoring temperatures over a certain amount of time.
       - RaspberryPi 4b
       - RaspberryPi 3b and b+ ✔
       - RaspberryPi 2b ✔
-      - RaspberryPi 1 ✔
+      - RaspberryPi 1b ✔
      
    - creating a wiki / manual ✔
     
