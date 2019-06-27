@@ -10,7 +10,7 @@ I tested this script on the Pi 1b, 2b, 3b and b+ and soon on the new and better 
 This repo is usefull for monitoring cpu temperatures of your Pi over a certain amount of time.
 
 **Check out the [Wiki](https://github.com/junglert/rpi-stresstest/wiki) and the [manual](https://github.com/junglert/rpi-stresstest/wiki/How-to)**
-
+***
 # How to:
   
   Install this git-repo:
@@ -46,7 +46,7 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
         Filename.csv:           Enter your filename with .csv at the end 
                                 (the file is created in the source folder of the script)
       
-      
+  ***    
    # Future plans:
 
    - user input for time and file ✔
