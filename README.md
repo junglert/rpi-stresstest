@@ -9,7 +9,7 @@ I tested this script on the Pi 1b, 2b, 3b and b+ and soon on the new and better 
 
 This repo is usefull for monitoring cpu temperatures of your Pi over a certain amount of time.
 
-**Check out the [Wiki](https://github.com/junglert/rpi-stresstest/wiki) and the [manual](https://github.com/junglert/rpi-stresstest/wiki/How-to)(**
+**Check out the [Wiki](https://github.com/junglert/rpi-stresstest/wiki) and the [manual](https://github.com/junglert/rpi-stresstest/wiki/How-to)**
 
 # How to:
   
