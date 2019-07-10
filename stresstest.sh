@@ -8,8 +8,7 @@
 showhelp(){ #function for the help-page
 echo '
 This script utilizes all cores of the RaspberryPi to the max.
-It´s working on RaspberryPi 1, 2b, 3b and b+ and hopefully
-on the new RaspberryPi 4.
+It´s working on RaspberryPi Zero W, Pi 1, 2b, 3b and b+ and Pi 4b.
 
 You need to exec this script with sudo ./stresstest.sh due to
 the fact that the command that reads the CPU frequency has
