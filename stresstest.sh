@@ -8,10 +8,11 @@
 showhelp(){ #function for the help-page
 echo '
 This script utilizes all cores of the RaspberryPi to the max.
-It´s working on RaspberryPi 1, 2b, 3b and b+
+It´s working on RaspberryPi 1, 2b, 3b and b+ and hopefully
+on the new RaspberryPi 4.
 
 You need to exec this script with sudo ./stresstest.sh due to
-the fact that the command that reads the CPU frequency needs
+the fact that the command that reads the CPU frequency has
 to be executed as root.
 
  -s or --start = start script and fill out the needed informations
@@ -32,7 +33,7 @@ stresstest(){ #function for stressing the pi
     read -p "Filename.csv: " save_dir #filename as a csv
 
     stress --cpu 4 --timeout ${duration} --quiet &
-    echo "Time; Temperature in °C; Frequency in MHz" | tee -a ${save_dir}
+    echo "Time       Temperature in °C   Frequency in MHz  on $(date)" | tee -a ${save_dir}
 
         for (( i=1; i<=${duration}; i++ ))
         do
@@ -40,7 +41,7 @@ stresstest(){ #function for stressing the pi
             time=$(date +%T)
             frequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
             frequency=$((frequency/1000))
-            echo "${time}; ${temptest}; ${frequency}" | tee -a ${save_dir}
+            echo "${time}   ${temptest}               ${frequency}" | tee -a ${save_dir}
             sleep 1 
         done
 }
