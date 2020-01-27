@@ -31,13 +31,13 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
           
   You will notice, that the script is not executing, instead the script is showing its usage:   
    
-          Usage: 1. sudo ./stresstest -s        
-                 2. ./stresstest -h for help page
-                 3. ./stresstest.sh for usage
+          Usage: 1. sudo ./stresstest -s or --start  | to start the script     
+                 2. ./stresstest -h or --help        | for help page
+                 3. ./stresstest.sh                  | for usage
     
   Starting the script:    
         
-          sudo ./stresstest -s
+          sudo ./stresstest -s / --start
   
   
   After that the shell should prompt 2 phrases:
