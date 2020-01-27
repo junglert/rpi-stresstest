@@ -37,7 +37,7 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
     
   Starting the script:    
         
-          sudo ./stresstest -s / --start
+          sudo ./stresstest -s or --start
   
   
   After that the shell should prompt 2 phrases:
