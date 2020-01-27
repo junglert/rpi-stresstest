@@ -31,9 +31,9 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
           
   You will notice, that the script is not executing, instead the script is showing its usage:   
    
-          Usage: 1. stresstest -s        
-                 2. "stresstest -h" for help page
-                 3. "stresstest" for usage
+          Usage: 1. sudo ./stresstest -s        
+                 2. ./stresstest -h for help page
+                 3. ./stresstest.sh for usage
     
   Starting the script:    
         
