@@ -23,7 +23,7 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
     
   Exec the script, you may have to change the permissions with 
         
-         chmod 777 ./stresstest.sh
+         chmod +x stresstest.sh
          
   After you changed the permissions exec the script:
         
