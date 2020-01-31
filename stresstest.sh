@@ -12,8 +12,8 @@ stresstest(){ #function for stressing the pi
     "
     downloadstress
     
-    echo -e "
-    \e[4mStarting rpi-stresstest\e[24m
+    echo "
+    Starting rpi-stresstest
     "
     echo "------------------------------------------------"
 
