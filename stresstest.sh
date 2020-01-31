@@ -5,10 +5,15 @@
 #license: GPL-3.0
 #summary: this bash script utilizes all cores of the RaspberryPi
 
+checkifdownloaded(){
+	dpkg -l stress
+}
+
 downloadstress(){
-	if dkpg -l stress >/dev/null;
+	if [ checkifdownloaded >/dev/null ]
+	then
 		echo "stress is already installed"
-	elif
+	else
 		apt-get install -y stress
 	fi		
 }
