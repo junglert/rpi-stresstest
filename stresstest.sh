@@ -8,7 +8,7 @@
 downloadstress(){
 	if dkpg -l stress >/dev/null;
 		echo "stress is already installed"
-	else
+	elif
 		apt-get install -y stress
 	fi		
 }
