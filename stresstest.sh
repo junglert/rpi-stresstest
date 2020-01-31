@@ -11,7 +11,9 @@ stresstest(){ #function for stressing the pi
     Checking if stress is installed, if not it´s going to be installed
     "
     downloadstress
-    echo "\n"
+    echo "
+    Starting rpi-stresstest
+    "
 
     read -p "Runtime in seconds: " duration #in seconds
     read -p "Filename.csv: " save_dir #filename as a csv
@@ -39,7 +41,9 @@ downloadstress(){
 	then
 		apt-get install -y stress
 	else
-		echo "stress is already installed"
+		echo "
+		stress is already installed
+		"
 	fi		
 }
 
