@@ -34,7 +34,7 @@ checkifdownloaded(){
 
 
 downloadstress(){
-	if [ checkifdownloaded -eq /dev/null ]
+	if [ checkifdownloaded == /dev/null ]
 	then
 		apt-get install -y stress
 	else
