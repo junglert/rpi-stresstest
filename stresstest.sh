@@ -34,7 +34,7 @@ stresstest(){ #function for stressing the pi
             sleep 1
         done
 	
-    echo "stresstest complete \e[32m\u2714"
+    #echo "stresstest complete \e[32m\u2714"
 }
 
 
