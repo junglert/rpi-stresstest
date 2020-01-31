@@ -9,6 +9,7 @@ stresstest(){ #function for stressing the pi
 
     echo "Checking if stress is installed, if not it´s going to be installed"
     downloadstress
+    echo ""
 
     read -p "Runtime in seconds: " duration #in seconds
     read -p "Filename.csv: " save_dir #filename as a csv
@@ -29,6 +30,7 @@ stresstest(){ #function for stressing the pi
 
 
 downloadstress(){
+	sleep 3
 	if [ checkifdownloaded == /dev/null ]
 	then
 		apt-get install -y stress &
