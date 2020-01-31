@@ -29,7 +29,7 @@ stresstest(){ #function for stressing the pi
         for (( i=1; i<=${duration}; i++ ))
         do
             cputemp=$(cat /sys/class/thermal/thermal_zone*/temp)
-	    temp=$((temptest/1000))
+	    temp=$((cputemp/1000))
             time=$(date +%T)
             cpufrequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
             frequency=$((cpufrequency/1000))
