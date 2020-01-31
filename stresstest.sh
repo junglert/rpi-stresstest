@@ -31,7 +31,7 @@ stresstest(){ #function for stressing the pi
 
 downloadstress(){
 	sleep 3
-	if [ dpkg -l stress  -eq /dev/null ]
+	if [ dpkg -l stress  > /dev/null ]
 	then
 		apt-get install -y stress &
 	else
