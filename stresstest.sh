@@ -42,14 +42,14 @@ downloadstress(){
 	if [ $? -ne 0 ]
 	then
 		apt-get install -y stress
-		echo -e "installed stress $greencheck"
+		echo "installed stress $greencheck"
 	else
-		echo -e "	stress is already installed $greencheck"
+		echo "	-> stress is already installed $greencheck"
 	fi		
 }
 
 greencheck(){
-	\e[32m\u2714
+	echo -e "\e[32m\u2714"
 }
 
 showhelp(){ #function for the help-page
