@@ -34,9 +34,9 @@ checkifdownloaded(){
 
 
 downloadstress(){
-	if [ checkifdownloaded >/dev/null ]
-		then
-			apt-get install -y stress
+	if [ checkifdownloaded -eq /dev/null ]
+	then
+		apt-get install -y stress
 	else
 		echo "stress is already installed"
 	fi		
