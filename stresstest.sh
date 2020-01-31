@@ -14,7 +14,7 @@ stresstest(){ #function for stressing the pi
     
     echo "
     Starting rpi-stresstest"
-    echo "-----------------------------------------"
+    echo "------------------------------------------------"
 
     read -p "Runtime in seconds: " duration #in seconds
     echo "
@@ -36,9 +36,10 @@ stresstest(){ #function for stressing the pi
             echo -e "${time}   \e[32m${temp}                  \e[96m${frequency} \e[39m" | tee -a ${save_dir}
             sleep 1
         done
-    echo "-----------------------------------------"
+    echo "------------------------------------------------"
     echo -e "
-    stresstest done\e[32m\u2714 \e[39m"
+    stresstest done\e[32m\u2714 \e[39m
+    "
 }
 
 
