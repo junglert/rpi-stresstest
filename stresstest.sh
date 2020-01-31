@@ -14,8 +14,7 @@ stresstest(){ #function for stressing the pi
     downloadstress
     
     echo "
-    Starting rpi-stresstest
-    "
+    Starting rpi-stresstest"
     echo "---------------------------------------"
 
     read -p "Runtime in seconds: " duration #in seconds
@@ -47,7 +46,7 @@ downloadstress(){
 		apt-get install -y stress
 		echo -e "installed stress \e[32m\u2714"
 	else
-		echo -e "stress is already installed \e[32m\u2714"
+		echo -e "	stress is already installed \e[32m\u2714"
 	fi		
 }
 
