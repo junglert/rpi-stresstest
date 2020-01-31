@@ -48,7 +48,7 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
 
    - user input for time and file ✔
    
-   - automaticly installes stress if not already install ✔
+   - automatically installes stress if not already installed ✔
   
    - ~~script creates own alias~~
   
