@@ -17,18 +17,22 @@ stresstest(){ #function for stressing the pi
     echo "-----------------------------------------"
 
     read -p "Runtime in seconds: " duration #in seconds
+    echo "
+    "
     read -p "Filename.csv: " save_dir #filename as a csv
+    echo "
+    "
 
     stress --cpu 4 --timeout ${duration} --quiet &
     echo "Time       Temperature in °C   Frequency in MHz  on $(date)" | tee -a ${save_dir}
 
         for (( i=1; i<=${duration}; i++ ))
         do
-            temptest=$(cat /sys/class/thermal/thermal_zone*/temp)
+            cputemp=$(cat /sys/class/thermal/thermal_zone*/temp)
 	    temp=$((temptest/1000))
             time=$(date +%T)
-            frequencytest=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
-            frequency=$((frequencytest/1000))
+            cpufrequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
+            frequency=$((cpufrequency/1000))
             echo -e "${time}   \e[32m ${temptest}               \e[96m ${frequency} \e[39m" | tee -a ${save_dir}
             sleep 1
         done
