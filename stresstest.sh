@@ -51,7 +51,7 @@ downloadstress(){
 }
 
 greencheck(){
-	echo -e "\e[32m\u2714"
+	echo -e "\e[32m\u2714 \e[39m"
 }
 
 showhelp(){ #function for the help-page
