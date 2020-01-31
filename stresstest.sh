@@ -32,7 +32,7 @@ stresstest(){ #function for stressing the pi
 downloadstress(){
 	if [ checkifinstalled > /dev/null ]
 	then
-		apt-get install -y stress &
+		apt-get install -y stress
 	else
 		echo "stress is already installed"
 	fi		
