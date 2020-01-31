@@ -17,9 +17,6 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
   
          git clone https://github.com/junglert/rpi-stresstest.git
 
-  Install the needed package:
-      
-         sudo apt-get install stress
     
   Exec the script, you may have to change the permissions with 
         
@@ -50,14 +47,16 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
    # Future plans:
 
    - user input for time and file ✔
+   
+   - automaticly installes stress if not already install ✔
   
    - ~~script creates own alias~~
   
    - help-page ✔
   
-   - testing on other Pi´s ~~✔~~
+   - testing on other Pi´s ✔
    
-      - RaspberryPi 4
+      - RaspberryPi 4 ✔
       - RaspberryPi 3b and b+ ✔
       - RaspberryPi 2b ✔
       - RaspberryPi 1b ✔
