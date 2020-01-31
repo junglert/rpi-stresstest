@@ -26,8 +26,8 @@ stresstest(){ #function for stressing the pi
         do
             temptest=$(cat /sys/class/thermal/thermal_zone*/temp)
             time=$(date +%T)
-            frequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
-            frequency=$((frequency/1000/1000))
+            frequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq/1000)
+            frequency=$((frequency/1000))
             echo -e "${time}   \e[32m ${temptest}               \e[96m ${frequency} \e[39m" | tee -a ${save_dir}
             sleep 1
         done
