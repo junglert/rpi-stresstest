@@ -6,7 +6,6 @@
 #summary: this bash script utilizes all cores of the RaspberryPi
 
 stresstest(){ #function for stressing the pi
-
     echo "
     Checking if stress is installed 
     if not, it´s going to be installed
@@ -36,23 +35,22 @@ stresstest(){ #function for stressing the pi
 
 
 downloadstress(){
-
 	dpkg -s stress &> /dev/null
 	
 	if [ $? -ne 0 ]
 	then
 		apt-get install -y stress
-		echo "installed stress"
-		greencheck
+		echo "installed stress" greencheck
 	else
-		echo "	-> stress is already installed" 
-		greencheck
+		echo "	-> stress is already installed" greencheck
 	fi		
 }
+
 
 greencheck(){
 	echo -e "\e[32m\u2714 \e[39m"
 }
+
 
 showhelp(){ #function for the help-page
 echo '
@@ -67,6 +65,7 @@ to be executed as root.
  -h or --help = help page
      '
 }
+
 
 showusage(){ #function for the usage-page
 echo '
