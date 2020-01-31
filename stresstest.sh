@@ -36,7 +36,7 @@ Usage: 1. sudo ./stresstest.sh -s or --start  | start the script
 stresstest(){ #function for stressing the pi
 
     echo "Checking if stress is installed, if not it´s going to be installed"
-    wait 5
+    sleep 5
 
     read -p "Runtime in seconds: " duration #in seconds
     read -p "Filename.csv: " save_dir #filename as a csv
