@@ -31,7 +31,8 @@ stresstest(){ #function for stressing the pi
             echo "${time}   ${temptest}               ${frequency}" | tee -a ${save_dir}
             sleep 1
         done
-    echo "stresstest done\e[32m\u2714 \e[39m"
+    echo -e "
+    stresstest done\e[32m\u2714 \e[39m"
 }
 
 
