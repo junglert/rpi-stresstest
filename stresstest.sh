@@ -30,7 +30,6 @@ stresstest(){ #function for stressing the pi
 
 
 downloadstress(){
-	sleep 3
 	if [ checkifinstalled > /dev/null ]
 	then
 		apt-get install -y stress &
