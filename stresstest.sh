@@ -42,9 +42,11 @@ downloadstress(){
 	if [ $? -ne 0 ]
 	then
 		apt-get install -y stress
-		echo "installed stress" greencheck
+		echo "installed stress
+		" greencheck
 	else
-		echo "	-> stress is already installed" greencheck
+		echo "	-> stress is already installed
+		" greencheck
 	fi		
 }
 
