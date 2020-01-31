@@ -42,7 +42,7 @@ downloadstress(){
 		apt-get install -y stress
 	else
 		echo "
-		stress is already installed
+	stress is already installed
 		"
 	fi		
 }
