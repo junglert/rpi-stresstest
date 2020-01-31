@@ -8,9 +8,11 @@
 stresstest(){ #function for stressing the pi
 
     echo "
-    Checking if stress is installed, if not it´s going to be installed
+    Checking if stress is installed 
+    if not, it´s going to be installed
     "
     downloadstress
+    
     echo "
     Starting rpi-stresstest
     "
@@ -29,8 +31,10 @@ stresstest(){ #function for stressing the pi
             frequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
             frequency=$((frequency/1000))
             echo "${time}   ${temptest}               ${frequency}" | tee -a ${save_dir}
-            sleep 1 
+            sleep 1
         done
+	
+    echo "stresstest complete \e[32m\u2714"
 }
 
 
@@ -41,9 +45,9 @@ downloadstress(){
 	if [ $? -ne 0 ]
 	then
 		apt-get install -y stress
-		echo -e "installed stress \u2714"
+		echo -e "installed stress \e[32m\u2714"
 	else
-		echo -e "stress is already installed \u2714"
+		echo -e "stress is already installed \e[32m\u2714"
 	fi		
 }
 
