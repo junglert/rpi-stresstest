@@ -29,7 +29,7 @@ stresstest(){ #function for stressing the pi
 
 
 checkifdownloaded(){
-	dpkg -l stress &
+	dpkg -s stress &
 }
 
 
