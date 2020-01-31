@@ -44,7 +44,7 @@ stresstest(){ #function for stressing the pi
 }
 
 
-downloadstress(){
+downloadstress(){ #function for checking and downloading stress
 	dpkg -s stress &> /dev/null
 	
 	if [ $? -ne 0 ]
