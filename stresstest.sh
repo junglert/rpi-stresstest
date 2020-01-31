@@ -6,7 +6,11 @@
 #summary: this bash script utilizes all cores of the RaspberryPi
 
 downloadstress(){
-	apt-get install -y stress
+	if dkpg -l stress >/dev/null;
+		echo "stress is already installed"
+	else
+		apt-get install -y stress
+	fi		
 }
 
 
