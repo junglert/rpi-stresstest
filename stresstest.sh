@@ -13,7 +13,8 @@ stresstest(){ #function for stressing the pi
     downloadstress
     
     echo "
-    Starting rpi-stresstest"
+    Starting rpi-stresstest
+    "
     echo "------------------------------------------------"
 
     read -p "Runtime in seconds: " duration #in seconds
@@ -38,7 +39,7 @@ stresstest(){ #function for stressing the pi
         done
      echo "------------------------------------------------"
     echo -e "
-    -> stresstest done \e[32m\u2714 \e[39m
+    -> stresstest successfully completed \e[32m\u2714 \e[39m
     "
 }
 
