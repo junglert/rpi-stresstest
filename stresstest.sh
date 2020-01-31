@@ -41,8 +41,9 @@ downloadstress(){
 	if [ $? -ne 0 ]
 	then
 		apt-get install -y stress
+		echo -e "installed stress \u2714"
 	else
-		echo "stress is already installed"
+		echo -e "stress is already installed \u2714"
 	fi		
 }
 
