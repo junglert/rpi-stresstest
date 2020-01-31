@@ -33,9 +33,10 @@ stresstest(){ #function for stressing the pi
             time=$(date +%T)
             cpufrequency=$(cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq)
             frequency=$((cpufrequency/1000))
-            echo -e "${time}   \e[32m${temp}                \e[96m${frequency} \e[39m" | tee -a ${save_dir}
+            echo -e "${time}   \e[32m${temp}                  \e[96m${frequency} \e[39m" | tee -a ${save_dir}
             sleep 1
         done
+    echo "-----------------------------------------"
     echo -e "
     stresstest done\e[32m\u2714 \e[39m"
 }
