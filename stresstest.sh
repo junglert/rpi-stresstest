@@ -36,9 +36,9 @@ stresstest(){ #function for stressing the pi
             echo -e "${time}   \e[32m${temp}                  \e[96m${frequency} \e[39m" | tee -a ${save_dir}
             sleep 1
         done
-    echo "------------------------------------------------"
+     echo "------------------------------------------------"
     echo -e "
-    stresstest done\e[32m\u2714 \e[39m
+    -> stresstest done \e[32m\u2714 \e[39m
     "
 }
 
@@ -48,10 +48,11 @@ downloadstress(){
 	
 	if [ $? -ne 0 ]
 	then
+		echo -e "	-> installing stress"
 		apt-get install -y stress
-		echo -e "installed stress\e[32m\u2714 \e[39m"
+		echo -e "installed stress \e[32m\u2714 \e[39m"
 	else
-		echo -e "	-> stress is already installed\e[32m\u2714 \e[39m"
+		echo -e "	-> stress is already installed \e[32m\u2714 \e[39m"
 	fi		
 }
 
