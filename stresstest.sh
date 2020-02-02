@@ -1,5 +1,5 @@
 #!/bin/bash
-#author: Johannes Unglert
+#author: junglert
 #mail:
 #date: 07.05.2019
 #license: GPL-3.0
