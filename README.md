@@ -36,12 +36,17 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
         
           sudo ./stresstest -s or --start
   
-  
-  After that the shell should prompt 2 phrases:
+  After you started the script, it will automatically check if stress is installed.
+  If stress is not installed, it´s going to be installed.
+  If stress is installed the script will go on with the following prompts:
       
         Runtime in seconds:     Enter the amount of time, in seconds, that you want the script to run
         Filename.csv:           Enter your filename with .csv at the end 
                                 (the file is created in the source folder of the script)
+  
+  Enter your wanted amount of time and a name.
+  
+  The script will now start to stress your Raspberry Pi and log all stats into a CSV-file.
       
   ***    
    # Future plans:
