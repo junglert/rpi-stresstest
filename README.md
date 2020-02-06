@@ -45,12 +45,14 @@ This repo is usefull for monitoring cpu temperatures of your Pi over a certain a
       
   ***    
    # Future plans:
+   
+   - changing temperature command to something else that does not need sudo
 
    - user input for time and file ✔
    
    - automatically installes stress if not already installed ✔
   
-   - ~~script creates own alias~~
+   - ~~script creates own alias~~ maybe in the near future, have to find a good way to implement
   
    - help-page ✔
   
