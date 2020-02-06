@@ -3,7 +3,7 @@
 #mail:
 #date: 07.05.2019
 #license: GPL-3.0
-#summary: bash script wich stresses the pi over a certain amount of time
+#summary: bash script which stresses the pi over a certain amount of time
 
 stresstest(){ #function for stressing the pi
     echo "
