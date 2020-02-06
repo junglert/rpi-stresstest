@@ -3,7 +3,7 @@
 #mail:
 #date: 07.05.2019
 #license: GPL-3.0
-#summary: this bash script utilizes all cores of the RaspberryPi
+#summary: bash script wich stresses the pi over a certain amount of time
 
 stresstest(){ #function for stressing the pi
     echo "
